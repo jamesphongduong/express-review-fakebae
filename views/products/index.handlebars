@@ -1,0 +1,11 @@
+<h1> Products </h1>
+
+{{#each products }}
+    <div class="wrap">
+        <p> Name: {{ this.name }} </p>
+        <p> Categories: {{#each this.categories}} {{this.categories}} {{/each}} </p>
+        <p> Price: {{ this.price }} </p>
+    </div>
+    {{!-- <hr> --}}
+
+{{/each}}
